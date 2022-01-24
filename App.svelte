@@ -35,6 +35,10 @@
     border: none;
     border-radius: 10px;
   }
+
+  h1 {
+    line-height:1;
+  }
 </style>
 
 <main>

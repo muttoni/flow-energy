@@ -21,6 +21,26 @@
     display: inline-block;
     transform: rotate(90deg);
   }
+
+  button {
+    background: #00ef8a;
+    color: black;
+    font-weight: 700;
+    padding: 10px 20px;
+    font-family: termina, sans-serif;
+    font-size: 0.8rem;
+    border: none;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 6px 6px black;
+  }
+  
+  button:active {
+    margin-top: 4px;
+    margin-bottom: -4px;
+    box-shadow: 2px 2px black;
+  }
 </style>
 
 <div class="funfact-container">
@@ -33,10 +53,10 @@
   {:else if $flowTransactions >= 35 && $flowTransactions < 55}
   <p in:slide out:slide>⚡️ Keep clicking! <br/>It's going to take about ~10,000 more Flow transactions!</p>
   {:else if $flowTransactions >= 55 && $flowEnergy < $ethEnergy}
-  {#if $flowTransactions >= 100}
+  {#if $flowTransactions >= 75}
   <p in:slide out:slide>
-    🤯 Wow, you are not giving up huh? Here's some help: <br/>
-    <button on:click={() => $flowTransactions = $flowTransactions + 500}>Click here to create 500 transactions at a time</button>
+    🤯 Wow, you are not giving up, huh? <br/>
+    <button on:click={() => $flowTransactions = $flowTransactions + 500}>Create 500 transactions at a time</button>
   </p>
   {/if}
   <p in:slide out:slide>
@@ -51,7 +71,7 @@
     and in this time the Ethereum network processed <strong>{(((+new Date() - $playingTime) / 1000) * ETH_TX_PER_SEC).toLocaleString('en-US', {maximumFractionDigits: 0})}</strong> transactions<br/>
     meaning you would still need to click <strong>{((((+new Date() - $playingTime) / 1000) * ETH_TX_PER_SEC * ETH_TX_CONSUMPTION) / FLOW_TX_CONSUMPTION).toLocaleString('en-US', {maximumFractionDigits: 0})}</strong> more times.<br/>
     Hopefully you've gotten the point that Flow uses very little energy 🔋
-    <br/><a href="https://docs.onflow.org/fcl/tutorials/flow-app-quickstart/" target="_blank">Build a Web3 app on Flow in minutes</a>
+    <br/><a href="https://docs.onflow.org/fcl/tutorials/flow-app-quickstart/" target="_blank">Build an eco-friendly Web3 app on Flow in minutes</a>
   </p>
   {/if}
 </div>
