@@ -14,8 +14,10 @@
 	  font-weight: 700;
 	  padding: 10px 20px;
 	  font-family: termina, sans-serif;
-	  font-size: 1.8rem;
+	  font-size: 1rem;
 	  border: none;
+    width: 100%;
+    max-width: 500px;
 	  border-radius: 10px;
 	  box-shadow: 6px 6px black;
 	}
