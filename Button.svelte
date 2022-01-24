@@ -30,5 +30,5 @@
 </style>
 
 <button on:click={handleClick}>
-  Flow transactions: { $flowTransactions }
+  Flow transactions: { ($flowTransactions).toLocaleString('en-US', {maximumFractionDigits: 0}) }
 </button>

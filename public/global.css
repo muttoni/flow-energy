@@ -7,3 +7,14 @@ body {
   font-family: termina, sans-serif;
   text-align: center;
 }
+
+button {
+  background: #dfdfdf;
+  color: black;
+  font-weight: 400;
+  padding: 3px 12px;
+  font-family: termina, sans-serif;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 10px;
+}

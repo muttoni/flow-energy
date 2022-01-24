@@ -76,7 +76,7 @@
   <div class="graph flow" style="height:{flowGraphHeight}vh">
     <div class="graph-name">Flow</div>
     <div class="graph-info">
-      {$flowTransactions} transaction{$flowTransactions === 1 ? '' : 's'}<br/>
+      {($flowTransactions).toLocaleString('en-US', {maximumFractionDigits: 0})} transaction{$flowTransactions === 1 ? '' : 's'}<br/>
       {$flowEnergy ? $flowEnergy.toFixed(2): 0}kWh
     </div>
 
