@@ -9,12 +9,13 @@
 
 <style>
 	button {
-	  background: #00ff48;
+	  background: #00ef8a;
 	  color: black;
-	  font-weight: 900;
-	  font-size: 2rem;
+	  font-weight: 700;
+	  padding: 10px 20px;
+	  font-family: termina, sans-serif;
+	  font-size: 1.8rem;
 	  border: none;
-	  padding: 8px 12px;
 	  border-radius: 10px;
 	  box-shadow: 6px 6px black;
 	}

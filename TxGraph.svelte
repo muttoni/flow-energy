@@ -23,15 +23,14 @@
     width: 500px;
     height: 300px;
     margin: 20px auto;
-    border: 1px solid rgb(196, 196, 196);
-    border-radius: 10px;
+    border-bottom: 1px solid rgb(124, 124, 124);
     justify-content: center;
   }
 
   .graph {
     margin-top: auto;
-    height: 2px;
-    width: 150px;
+    height: 0px;
+    width: 180px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     position: relative;
@@ -45,18 +44,27 @@
   .graph-name {
     font-size: 1rem;
     font-weight: bold;
-    margin-top: -20px;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+  }
+
+  .graph-info {
+    font-size: 0.7rem;
+    font-weight: lighter;
+    bottom: 10px;
     width: 100%;
     text-align: center;
     position: absolute;
   }
 
   .flow {
-    background-color: #00ff48;
+    background-color: #00ef8a;
   }
 
   .eth {
-    background-color: grey;
+    background-color: rgb(192, 192, 192);
   }
 </style>
 
@@ -64,12 +72,18 @@
 <div class="graph-container">
   <div class="graph flow" style="height:{flowGraphHeight}px">
     <div class="graph-name">Flow</div>
-    <div class="graph-info">{$flowEnergy.toFixed(2)}kwh</div>
+    <div class="graph-info">
+      {$flowTransactions} transaction{$flowTransactions === 1 ? '' : 's'}<br/>
+      {$flowEnergy ? $flowEnergy.toFixed(2): 0}kWh
+    </div>
 
   </div>
-  <div class="graph eth" style="height:{MAX_HEIGHT}px">
+  <div class="graph eth" style="height:{ $ethEnergy > 0 ? MAX_HEIGHT : 0}px">
      <div class="graph-name">Ethereum</div>
-     <div class="graph-info">{$ethEnergy.toFixed(2)}kwh</div>
+     <div class="graph-info">
+      { $ethEnergy > 0 ? 1 : 0} transaction{$ethEnergy > 0 ? '' : 's'}<br/>
+      ~{$ethEnergy}kWh*
+    </div>
 
   </div>
 </div>
