@@ -47,9 +47,9 @@
   {#if $flowTransactions < 1 }
   <p in:slide out:slide class="help"><span class="arrow">↵</span> use this button to create Flow transactions</p>
   {:else if $flowTransactions >= 1 && $flowTransactions < 20}
-  <p in:slide out:slide>🌱 1 Flow transaction uses less energy than a single tweet.</p>
+  <p in:slide out:slide>🌱 Fun Fact: 1 Flow transaction uses less energy than a single tweet.</p>
   {:else if $flowTransactions >= 20 && $flowTransactions < 35}
-  <p in:slide out:slide>✅ Don't worry, this is all simulated! <br/>No environment is being harmed.</p>
+  <p in:slide out:slide>✅ Don't worry, this is all simulated! <br/>No resources are being wasted.</p>
   {:else if $flowTransactions >= 35 && $flowTransactions < 55}
   <p in:slide out:slide>⚡️ Keep clicking! <br/>It's going to take about ~10,000 more Flow transactions!</p>
   {:else if $flowTransactions >= 55 && $flowEnergy < $ethEnergy}

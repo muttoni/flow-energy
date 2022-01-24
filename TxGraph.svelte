@@ -6,6 +6,10 @@
   let ethGraphHeight;
   let flowGraphHeight;
 
+  $: if(!$flowTransactions || $flowTransactions < 0) {
+    flowGraphHeight = 0;
+  }
+  
   $: if ($ethEnergy && $flowTransactions && $flowEnergy) {
     if ($ethEnergy > $flowEnergy) {
       ethGraphHeight = MAX_HEIGHT;
