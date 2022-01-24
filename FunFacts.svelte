@@ -45,7 +45,7 @@
 
 <div class="funfact-container">
   {#if $flowTransactions < 1 }
-  <p in:slide out:slide class="help"><span class="arrow">↵</span> use this button to create Flow transactions</p>
+  <p in:slide out:slide class="help"><span class="arrow">↵</span> use this button to create Flow transactions<br/><small>(or press the Enter key)</small></p>
   {:else if $flowTransactions >= 1 && $flowTransactions < 20}
   <p in:slide out:slide>🌱 Fun Fact: 1 Flow transaction uses less energy than a single tweet.</p>
   {:else if $flowTransactions >= 20 && $flowTransactions < 35}

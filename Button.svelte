@@ -1,7 +1,11 @@
 <script>
   import { flowTransactions } from "./store";
+  import { onMount } from 'svelte'
   // import { longpress } from './actions.js';
   
+  let btn;
+  onMount(() => btn.focus())
+
   function handleClick() {
     $flowTransactions++;
   }
@@ -21,6 +25,8 @@
     border-radius: 10px;
     box-shadow: 6px 6px black;
   }
+
+  button:focus { outline: none; }
   
   button:active {
     margin-top: 4px;
@@ -29,6 +35,6 @@
   }
 </style>
 
-<button on:click={handleClick}>
+<button on:click={handleClick} bind:this={btn}>
   Flow transactions: { ($flowTransactions).toLocaleString('en-US', {maximumFractionDigits: 0}) }
 </button>
