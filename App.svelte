@@ -2,11 +2,11 @@
   import Button from "./Button.svelte";
   import TxGraph from "./TxGraph.svelte";
   import FunFacts from './FunFacts.svelte';
-  import { flowTransactions } from "./store";
+  import { flowTransactions, playingTime } from "./store";
   
   function handleClick() {
     $flowTransactions = 0;
-    // $ethEnergy = 0;
+    $playingTime = +new Date();
   }
 </script>
 
