@@ -67,8 +67,8 @@
   <p in:slide out:slide>
     🎉 Well done! You reached 1 Ethereum transaction.
     <br/>Unfortunately, it took you <strong>{ ((+new Date() - $playingTime) / 1000).toLocaleString('en-US', {maximumFractionDigits: 0}) }</strong> seconds to play this game,
-    <br/>and in this time the Ethereum network processed <strong>{(((+new Date() - $playingTime) / 1000) * ETH_TX_PER_SEC).toLocaleString('en-US', {maximumFractionDigits: 0})}</strong> transactions
-    <br/>meaning you would still need to click <strong>{((((+new Date() - $playingTime) / 1000) * ETH_TX_PER_SEC * ETH_TX_CONSUMPTION) / FLOW_TX_CONSUMPTION).toLocaleString('en-US', {maximumFractionDigits: 0})}</strong> more times.
+    <br/>and in this time the Ethereum network processed <strong>{(((+new Date() - $playingTime) / 1000) * ETH_TX_PER_SEC).toLocaleString('en-US', {maximumFractionDigits: 0})}</strong> transactions,
+    <br/>the equivalent of <strong>{((((+new Date() - $playingTime) / 1000) * ETH_TX_PER_SEC * ETH_TX_CONSUMPTION) / FLOW_TX_CONSUMPTION).toLocaleString('en-US', {maximumFractionDigits: 0})}</strong> Flow transactions.
     <br/>
     <br/><a href="https://docs.onflow.org/fcl/tutorials/flow-app-quickstart/" target="_blank">Build a sustainable Web3 app on Flow in minutes</a>
   </p>
