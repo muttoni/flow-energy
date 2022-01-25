@@ -3,7 +3,7 @@ import { writable, derived } from "svelte/store";
 export const ETH_TX_CONSUMPTION = 238; // https://www.statista.com/statistics/1265891/ethereum-energy-consumption-transaction-comparison-visa/
 export const ETH_TX_PER_SEC = 15;
 
-export const FLOW_TX_CONSUMPTION = 0.023; // 1gwh / 44M tx in 1 year
+export const FLOW_TX_CONSUMPTION = 0.005; // 1gwh / 44M tx in 1 year
 
 export const ethEnergy = writable(0);
 export const playingTime = writable(+new Date());

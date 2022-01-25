@@ -2,11 +2,17 @@
   import Button from "./Button.svelte";
   import TxGraph from "./TxGraph.svelte";
   import FunFacts from './FunFacts.svelte';
-  import { flowTransactions, playingTime } from "./store";
+  import confetti from 'canvas-confetti';
+
+  import { flowTransactions, flowEnergy, ethEnergy, playingTime } from "./store";
   
   function handleClick() {
     $flowTransactions = 0;
     $playingTime = +new Date();
+  }
+
+  $: if($flowEnergy > 0 && $flowEnergy >= $ethEnergy) {
+    confetti()
   }
 </script>
 

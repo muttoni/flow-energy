@@ -46,17 +46,17 @@
 <div class="funfact-container">
   {#if $flowTransactions < 1 }
   <p in:slide out:slide class="help"><span class="arrow">↵</span> use this button to create Flow transactions<br/><small>(or press the Enter key)</small></p>
-  {:else if $flowTransactions >= 1 && $flowTransactions < 20}
-  <p in:slide out:slide>🌱 Fun Fact: 1 Flow transaction uses less energy than a single tweet.</p>
-  {:else if $flowTransactions >= 20 && $flowTransactions < 35}
+  {:else if $flowTransactions >= 1 && $flowTransactions < 10}
   <p in:slide out:slide>✅ Don't worry, this is all simulated! <br/>No resources are being wasted.</p>
-  {:else if $flowTransactions >= 35 && $flowTransactions < 55}
-  <p in:slide out:slide>⚡️ Keep clicking! <br/>It's going to take about ~10,000 more Flow transactions!</p>
-  {:else if $flowTransactions >= 55 && $flowEnergy < $ethEnergy}
-  {#if $flowTransactions >= 75}
+  {:else if $flowTransactions >= 10 && $flowTransactions < 20}
+  <p in:slide out:slide>🌱 Fun Fact: minting an NFT on Flow<br/> uses less energy than a single tweet.</p>
+  {:else if $flowTransactions >= 20 && $flowTransactions < 30}
+  <p in:slide out:slide>⚡️ Keep going! <br/>Only ~50,000 Flow transactions to go!</p>
+  {:else if $flowTransactions >= 30 && $flowEnergy < $ethEnergy}
+  {#if $flowTransactions >= 35}
   <p in:slide out:slide>
     🤯 Wow, you are not giving up, huh? <br/>
-    <button on:click={() => $flowTransactions = $flowTransactions + 500}>Create 500 transactions at a time</button>
+    <button on:click={() => $flowTransactions = $flowTransactions + 5000}>Create 5,000 transactions at a time</button>
   </p>
   {/if}
   <p in:slide out:slide>
