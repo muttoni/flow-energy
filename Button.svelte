@@ -36,5 +36,5 @@
 </style>
 
 <button on:click={handleClick} bind:this={btn}>
-  Flow transactions: { ($flowTransactions).toLocaleString('en-US', {maximumFractionDigits: 0}) }
+  Flow NFTs: { ($flowTransactions).toLocaleString('en-US', {maximumFractionDigits: 0}) }
 </button>

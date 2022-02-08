@@ -80,7 +80,7 @@
   <div class="graph flow" style="height:{flowGraphHeight}vh">
     <div class="graph-name">Flow</div>
     <div class="graph-info">
-      {($flowTransactions).toLocaleString('en-US', {maximumFractionDigits: 0})} transaction{$flowTransactions === 1 ? '' : 's'}<br/>
+      {($flowTransactions).toLocaleString('en-US', {maximumFractionDigits: 0})} NFT{$flowTransactions === 1 ? '' : 's'}<br/>
       {$flowEnergy ? $flowEnergy.toFixed(2): 0}kWh
     </div>
 
@@ -88,7 +88,7 @@
   <div class="graph eth" style="height:{ $ethEnergy > 0 ? MAX_HEIGHT : 0}vh">
      <div class="graph-name">Ethereum</div>
      <div class="graph-info">
-      { $ethEnergy > 0 ? 1 : 0} transaction{$ethEnergy > 0 ? '' : 's'}<br/>
+      { $ethEnergy > 0 ? 1 : 0} NFT{$ethEnergy > 0 ? '' : 's'}<br/>
       ~{$ethEnergy}kWh*
     </div>
 

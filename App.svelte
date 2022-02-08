@@ -49,7 +49,7 @@
 
 <main>
   <h1>The Energy Challenge</h1>
-  <p>Can you reach the energy consumption of a single Ethereum transaction?</p>
+  <p>Can you reach the energy consumption of minting a single Ethereum NFT?</p>
   <TxGraph />
   <Button />
   <FunFacts />
