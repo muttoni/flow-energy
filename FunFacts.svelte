@@ -56,7 +56,7 @@
   {#if $flowTransactions >= 35}
   <p in:slide out:slide>
     🤯 Wow, you are not giving up, huh? <br/>
-    <button on:click={() => $flowTransactions = $flowTransactions + 5000}>Mint 5,000 NTs at a time</button>
+    <button on:click={() => $flowTransactions = $flowTransactions + 5000}>Mint 5,000 NFTs at a time</button>
   </p>
   {/if}
   <p in:slide out:slide>
