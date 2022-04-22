@@ -10,7 +10,14 @@
     min-height: 100px;
     display:block;
     width:100%;
-    margin-top: 30px;
+    margin: 0 auto;
+    border-radius:10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-top: 0px;
+    padding: 30px 0px;
+    background-color: rgba(255,255,255,0.8);
+    max-width: 450px;
   }
 
   .help {
@@ -31,7 +38,7 @@
     font-size: 0.8rem;
     border: none;
     width: 100%;
-    max-width: 500px;
+    max-width: 350px;
     border-radius: 10px;
     box-shadow: 6px 6px black;
   }
@@ -67,7 +74,7 @@
   <p in:slide out:slide>
     🎉 Well done! You reached the energy consumption of minting 1 Ethereum NFT.
     <br/>Unfortunately, it took you <strong>{ ((+new Date() - $playingTime) / 1000).toLocaleString('en-US', {maximumFractionDigits: 0}) }</strong> seconds to play this game,
-    <br/>and in this time the Ethereum network processed <strong>{(((+new Date() - $playingTime) / 1000) * ETH_TX_PER_SEC).toLocaleString('en-US', {maximumFractionDigits: 0})}</strong> transactions,
+    and in this time the Ethereum network processed <strong>{(((+new Date() - $playingTime) / 1000) * ETH_TX_PER_SEC).toLocaleString('en-US', {maximumFractionDigits: 0})}</strong> transactions,
     <br/>the equivalent of minting <strong>{((((+new Date() - $playingTime) / 1000) * ETH_TX_PER_SEC * ETH_TX_CONSUMPTION) / FLOW_TX_CONSUMPTION).toLocaleString('en-US', {maximumFractionDigits: 0})}</strong> Flow NFTs.
     <br/>
     <br/><a href="https://docs.onflow.org/fcl/tutorials/flow-app-quickstart/" target="_blank">Build a sustainable Web3 app on Flow in minutes</a>

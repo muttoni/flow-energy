@@ -51,14 +51,14 @@
   .graph-name {
     font-size: 1em;
     font-weight: bold;
-    bottom: 50px;
+    bottom: 60px;
     width: 100%;
     text-align: center;
     position: absolute;
   }
 
   .graph-info {
-    font-size: 0.7em;
+    font-size: 0.9em;
     font-weight: lighter;
     bottom: 10px;
     width: 100%;
@@ -71,7 +71,7 @@
   }
 
   .eth {
-    background-color: rgb(192, 192, 192);
+    background-color: #d48aff;
   }
 </style>
 

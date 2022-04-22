@@ -45,9 +45,25 @@
   h1 {
     line-height:1;
   }
+
+  .sustainability-hero {
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    background-image: url("https://assets.website-files.com/5f734f4dbd95382f4fdfa0ea/61b9d5c1e3b61714f7b2da03_Flow_Sustainability_header_1%201.jpg");
+    background-position: 50% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    color: #fff;
+    z-index:-1000;
+}
 </style>
 
 <main>
+  <div class="sustainability-hero"></div>
   <h1>The Energy Challenge</h1>
   <p>Can you reach the energy consumption of minting a single Ethereum NFT?</p>
   <TxGraph />

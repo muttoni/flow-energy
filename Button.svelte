@@ -16,7 +16,7 @@
     background: #00ef8a;
     color: black;
     font-weight: 700;
-    padding: 10px 20px;
+    padding: 20px 20px;
     font-family: termina, sans-serif;
     font-size: 1rem;
     border: none;
@@ -36,5 +36,5 @@
 </style>
 
 <button on:click={handleClick} bind:this={btn}>
-  Flow NFTs: { ($flowTransactions).toLocaleString('en-US', {maximumFractionDigits: 0}) }
+  {$flowTransactions <= 0 ? 'Click here to mint a Flow NFT!' : `Flow NFTs: ${ ($flowTransactions).toLocaleString('en-US', {maximumFractionDigits: 0}) }` }
 </button>
