@@ -58,12 +58,12 @@
   {:else if $flowTransactions >= 10 && $flowTransactions < 20}
   <p in:slide out:slide>🌱 Fun Fact: minting an NFT on Flow<br/> uses less energy than a single tweet.</p>
   {:else if $flowTransactions >= 20 && $flowTransactions < 30}
-  <p in:slide out:slide>⚡️ Keep going! <br/>Only ~2M Flow NFTs to go!</p>
+  <p in:slide out:slide>⚡️ Keep going! <br/>Only ~250,000 Flow NFTs to go!</p>
   {:else if $flowTransactions >= 30 && $flowEnergy < $ethEnergy}
   {#if $flowTransactions >= 35}
   <p in:slide out:slide>
     🤯 Wow, you are not giving up, huh? <br/>
-    <button on:click={() => $flowTransactions = $flowTransactions + 100000}>Mint 100,000 NFTs at a time</button>
+    <button on:click={() => $flowTransactions = $flowTransactions + 50000}>Mint 50,000 NFTs at a time</button>
   </p>
   {/if}
   <p in:slide out:slide>
