@@ -73,5 +73,5 @@
 
 <footer>
   <button class="reset" on:click={handleClick}>reset</button>
-  <p class="footer">* Ethereum energy consumption from <a href="https://www.statista.com/statistics/1265891/ethereum-energy-consumption-transaction-comparison-visa/" target="_blank">Statista</a></p>
+  <p class="footer">* Ethereum energy consumption from <a href="https://ethereum.org/en/energy-consumption" target="_blank">Ethereum.org</a></p>
 </footer>
